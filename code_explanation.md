@@ -3,7 +3,8 @@ Yo! Riri's here to explain the code.
 Btw, this system runs through CMD or terminal ha? ge.
 
 1. test_room.php
-    -> Wala lang to beh, you guys can just delete this one if you want. for testing lang talaga to kazi tinry ko lang if gumagana pa utak ko sa php.
+
+             Wala lang to beh, you guys can just delete this one if you want. for testing lang talaga to kazi tinry ko lang if gumagana pa utak ko sa php.
 
 2. Room.php
 
@@ -23,6 +24,23 @@ Btw, this system runs through CMD or terminal ha? ge.
         Here is the main operations of the hotel system; dito na pumapasok yung room management, reservation processing, and file operations.
 
         Yung nakikita nyong _construct() method sa code, yan na yung mag p-prepare ng data sa mga folders and text files. if there are no saved rooms yet, the system add four sample rooms. yung loadRooms() and loadReservations() naman yung mag r-read ng mga saved records then i convert them into objects. meanwhile yung saveRooms() and saveReservation() yung mag susulat ng mga updated information back sa text files. 
+
+
+4. index.php
+
+        Main files na nag papa run ng program. Ito yung nag c-create ng hotel object and mag p-pa display ng menu sa CMD. I used a while loop so that the menu keeps appearing til the user chooses Exit. Yung switch statement yung mag c-check ng user's choice and calls the corresponding method from the Hotel class.
+
+        Kunyari, kapag pinili ni user yung option 1, tatawagin ng program yung viewRooms() sa code but if option 2 naman pipiliin ni user then tatawagin nya naman yung makeReservation().
+
+5. test_room.php
+
+        Wala lang to, i delete nyo lang yan. for testing laang yan.
+
+Since di naman tayo gumagamit ng database here, so i used text files para ma store yung records so kibale yung data/room.txt yung mag store ng room information tas yung data/reservation.txt naman yung mag s-store ng details ni user. 
+
+I also used functions such as file(), file_put_contents(), file_exists(), and mkdir() to read, save, and prepare the files para ket i closed mo na yung program eh naka saved parin sya.
+
+
 
 
 
