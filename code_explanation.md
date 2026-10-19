@@ -32,16 +32,9 @@ Btw, this system runs through CMD or terminal ha? ge.
 
         Kunyari, kapag pinili ni user yung option 1, tatawagin ng program yung viewRooms() sa code but if option 2 naman pipiliin ni user then tatawagin nya naman yung makeReservation().
 
-5. test_room.php
-
-        Wala lang to, i delete nyo lang yan. for testing laang yan.
 
 Since di naman tayo gumagamit ng database here, so i used text files para ma store yung records so kibale yung data/room.txt yung mag store ng room information tas yung data/reservation.txt naman yung mag s-store ng details ni user. 
 
 I also used functions such as file(), file_put_contents(), file_exists(), and mkdir() to read, save, and prepare the files para ket i closed mo na yung program eh naka saved parin sya.
 
-
-
-
-
-
+That's all if may nd aq na explain or may hindi ka na intindihan, then you ask me nalang about it. omkieeee? ahkeyyy.
